@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solarized Docs | Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav id="navbar">
+        <header>
+            <h1>Solarized Docs</h1>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">introduction</a></li>
+            <li><a class="nav-link" href="#installation">installation</a></li>
+            <li><a class="nav-link" href="#usage">usage</a></li>
+            <li><a class="nav-link" href="#configuration">configuration</a></li>
+            <li><a class="nav-link" href="#api_reference">api reference</a></li>
+            <li><a class="nav-link" href="#troubleshooting">troubleshooting</a></li>
+            <li><a class="nav-link" href="#contributing">contributing</a></li>
+        </ul>
+    </nav>
+
+    <!-- main content -->
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>
+                <h2>introduction</h2>
+            </header>
+            <article>
+                <p>Solarized is a sixteen color palette (eight monotones, eight accent colors) designed for use with
+                    terminal and graphical user interfaces. It offers both light and dark variants with precisely
+                    calculated perceptual contrast.</p>
+                <p>This documentation provides everything you need to integrate Solarized into your projects.</p>
+                <ul>
+                    <li>precise perceptual contrast</li>
+                    <li>both light and dark modes</li>
+                    <li>designed for terminals and code editors</li>
+                    <li>widely adopted across tools and platforms</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="installation">
+            <header>
+                <h2>installation</h2>
+            </header>
+            <article>
+                <p>install via npm:</p>
+                <pre><code>npm install solarized-theme</code></pre>
+                <p>or download directly from the official repository:</p>
+                <pre><code>git clone https://github.com/altercation/solarized.git</code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="usage">
+            <header>
+                <h2>usage</h2>
+            </header>
+            <article>
+                <p>import the css variables in your stylesheet:</p>
+                <pre><code>@import 'solarized-light.css';</code></pre>
+                <p>apply the base colors:</p>
+                <pre><code>body {
+  background: var(--base3);
+  color: var(--base00);
+  font-family: 'Inter', sans-serif;
+}</code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="configuration">
+            <header>
+                <h2>configuration</h2>
+            </header>
+            <article>
+                <p>solarized light palette:</p>
+                <pre><code>:root {
+  --base03:  #002b36;
+  --base02:  #073642;
+  --base01:  #586e75;
+  --base00:  #657b83;
+  --base0:   #839496;
+  --base1:   #93a1a1;
+  --base2:   #eee8d5;
+  --base3:   #fdf6e3;
+  --yellow:  #b58900;
+  --orange:  #cb4b16;
+  --red:     #dc322f;
+  --magenta: #d33682;
+  --violet:  #6c71c4;
+  --blue:    #268bd2;
+  --cyan:    #2aa198;
+  --green:   #859900;
+}</code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="api_reference">
+            <header>
+                <h2>api reference</h2>
+            </header>
+            <article>
+                <h3>getcolor(name)</h3>
+                <p>returns the hex value of a solarized color.</p>
+                <pre><code>getColor('blue')   // → "#268bd2"
+getColor('base3') // → "#657b83"</code></pre>
+
+                <h3>isdarkmode()</h3>
+                <p>detects if dark variant is active.</p>
+                <pre><code>if (isDarkMode()) {
+  applyDarkTheme();
+}</code></pre>
+            </article>
+        </section>
+
+        <section class="main-section" id="troubleshooting">
+            <header>
+                <h2>troubleshooting</h2>
+            </header>
+            <article>
+                <p><strong>colors look washed out?</strong><br>
+                    ensure you're using true color terminal or a supporting editor.</p>
+                <p><strong>contrast too low?</strong><br>
+                    solarized relies on 256-color terminals with proper background settings.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="contributing">
+            <header>
+                <h2>contributing</h2>
+            </header>
+            <article>
+                <p>we welcome contributions! please follow these steps:</p>
+                <ol>
+                    <li>fork the repository</li>
+                    <li>create a feature branch</li>
+                    <li>commit your changes</li>
+                    <li>open a pull request</li>
+                </ol>
+                <p>see the <a href="https://github.com/altercation/solarized" target="_blank">official repo</a> for more
+                    details.</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
