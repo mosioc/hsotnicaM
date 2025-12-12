@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>steve jobs • visionary</title>
+    <meta name="description"
+        content="a tribute to steve jobs – co-founder of apple, pioneer of personal computing, and one of the greatest innovators of our time." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <header class="header">
+            <h1 class="title">steve jobs</h1>
+            <p class="subtitle">visionary • innovator • legend</p>
+            <p class="years">1955 – 2011</p>
+        </header>
+
+        <!-- hero image -->
+        <section class="hero">
+            <img src="https://www.apple.com/newsroom/images/product/iphone/standard/steve1_inline.jpg.large.jpg"
+                alt="steve jobs presenting on stage" class="hero-img" loading="lazy">
+            <p class="hero-caption">revolutionizing the world, one product at a time</p>
+        </section>
+
+        <!-- biography -->
+        <section class="biography">
+            <h2>the man who thought different</h2>
+            <p>
+                steve jobs was an american entrepreneur, inventor, and designer who co-founded apple inc.
+                he revolutionized personal computing, music, mobile phones, tablets, animation, and digital publishing.
+                known for his relentless pursuit of perfection and intuitive design, jobs left an indelible mark on
+                technology and culture.
+            </p>
+        </section>
+
+        <!-- timeline -->
+        <section class="timeline-section">
+            <h2>timeline of innovation</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-year="1955">born in san francisco</div>
+                <div class="timeline-item" data-year="1976">co-founded apple with steve wozniak</div>
+                <div class="timeline-item" data-year="1984">launched the macintosh</div>
+                <div class="timeline-item" data-year="1985">left apple, founded next & acquired pixar</div>
+                <div class="timeline-item" data-year="1997">returned to apple as interim ceo</div>
+                <div class="timeline-item" data-year="2001">introduced ipod + itunes</div>
+                <div class="timeline-item" data-year="2007">unveiled the iphone</div>
+                <div class="timeline-item" data-year="2010">launched the ipad</div>
+                <div class="timeline-item" data-year="2011">passed away at age 56</div>
+            </div>
+        </section>
+
+        <!-- achievements -->
+        <section class="achievements">
+            <h2>revolutionary achievements</h2>
+            <div class="grid">
+                <div class="card">pioneer of personal computing</div>
+                <div class="card">transformed the music industry</div>
+                <div class="card">invented the modern smartphone</div>
+                <div class="card">led pixar to animation greatness</div>
+                <div class="card">perfectionist design philosophy</div>
+                <div class="card">created the apple store experience</div>
+            </div>
+        </section>
+
+        <!-- quotes -->
+        <section class="quotes">
+            <div class="quote-slider">
+                <blockquote class="quote active">
+                    <p>“stay hungry, stay foolish.”</p>
+                    <cite>stanford commencement, 2005</cite>
+                </blockquote>
+                <blockquote class="quote">
+                    <p>“innovation distinguishes between a leader and a follower.”</p>
+                    <cite>steve jobs</cite>
+                </blockquote>
+                <blockquote>
+                    <p>“design is not just what it looks like. design is how it works.”</p>
+                    <cite>steve jobs</cite>
+                </blockquote>
+                <blockquote class="quote">
+                    <p>“the people who are crazy enough to think they can change the world are the ones who do.”</p>
+                    <cite>steve jobs</cite>
+                </blockquote>
+            </div>
+
+            <div class="controls">
+                <button id="prev" aria-label="previous quote">←</button>
+                <div class="dots" id="dots"></div>
+                <button id="next" aria-label="next quote">→</button>
+            </div>
+        </section>
+
+        <!-- stats -->
+        <section class="stats">
+            <h2>impact in numbers</h2>
+            <div class="grid">
+                <div class="stat">
+                    <div class="number" data-target="2000">0</div>
+                    <div class="label">million+ ios devices sold</div>
+                </div>
+                <div class="stat">
+                    <div class="number" data-target="500">0</div>
+                    <div class="label">apple stores worldwide</div>
+                </div>
+                <div class="stat">
+                    <div class="number" data-target="313">0</div>
+                    <div class="label">u.s. patents</div>
+                </div>
+                <div class="stat">
+                    <div class="number" data-target="3">0</div>
+                    <div class="label">trillion $ company (first to reach)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <p>made with respect for one of the greatest minds of our era.</p>
+            <p>learn more on <a href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank"
+                    rel="noopener">wikipedia</a></p>
+            <button id="toTop" class="to-top" aria-label="back to top">↑</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
