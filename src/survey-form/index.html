@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h1>Customer Satisfaction Survey</h1>
+                <p>We value your feedback. Please take a moment to complete this survey.</p>
+            </div>
+
+            <form id="surveyForm">
+                <!-- personal information section -->
+                <div class="form-section">
+                    <h2>Personal Information</h2>
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age Group <span class="required">*</span></label>
+                        <select id="age" name="age" required>
+                            <option value="">Select your age group</option>
+                            <option value="18-24">18-24</option>
+                            <option value="25-34">25-34</option>
+                            <option value="35-44">35-44</option>
+                            <option value="45-54">45-54</option>
+                            <option value="55+">55+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- service experience section -->
+                <div class="form-section">
+                    <h2>Service Experience</h2>
+
+                    <div class="form-group">
+                        <label>How satisfied are you with our service? <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="satisfaction" value="very-satisfied" required>
+                                <span>Very Satisfied</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="satisfaction" value="satisfied">
+                                <span>Satisfied</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="satisfaction" value="neutral">
+                                <span>Neutral</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="satisfaction" value="dissatisfied">
+                                <span>Dissatisfied</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="satisfaction" value="very-dissatisfied">
+                                <span>Very Dissatisfied</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Which aspects did you appreciate? <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="aspects" value="quality">
+                                <span>Product Quality</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="aspects" value="customer-service">
+                                <span>Customer Service</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="aspects" value="pricing">
+                                <span>Pricing</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="aspects" value="delivery">
+                                <span>Delivery Speed</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="aspects" value="website">
+                                <span>Website Experience</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recommendation">How likely are you to recommend us? <span
+                                class="required">*</span></label>
+                        <select id="recommendation" name="recommendation" required>
+                            <option value="">Please select</option>
+                            <option value="10">10 - Extremely Likely</option>
+                            <option value="9">9</option>
+                            <option value="8">8</option>
+                            <option value="7">7</option>
+                            <option value="6">6</option>
+                            <option value="5">5 - Neutral</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="0">0 - Not Likely</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- additional feedback section -->
+                <div class="form-section">
+                    <h2>Additional Feedback</h2>
+
+                    <div class="form-group">
+                        <label for="comments">Comments or Suggestions</label>
+                        <textarea id="comments" name="comments" rows="5"
+                            placeholder="Please share any additional thoughts or suggestions..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="contact" value="yes">
+                            <span>I would like to be contacted regarding my feedback</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- submit button -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Submit Survey</button>
+                    <button type="reset" class="btn-reset">Clear Form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
