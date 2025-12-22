@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>SkyCast</h1>
+            <p>Select a city to view current conditions</p>
+        </header>
+
+        <section class="controls">
+            <select id="city-select">
+                <option value="" selected disabled>Choose a city...</option>
+                <option value="new york">New York</option>
+                <option value="los angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="london">London</option>
+            </select>
+            <button id="get-weather-btn">Get Weather</button>
+        </section>
+
+        <main id="weather-display" class="hidden">
+            <div class="weather-header">
+                <h2 id="location">City Name</h2>
+                <div class="icon-wrapper">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <span id="weather-main">Condition</span>
+                </div>
+            </div>
+
+            <div class="current-temp-card">
+                <span id="main-temperature">--</span><span class="unit">°C</span>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Feels Like</h3>
+                    <p><span id="feels-like">--</span> °C</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Humidity</h3>
+                    <p><span id="humidity">--</span> %</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Wind Speed</h3>
+                    <p><span id="wind">--</span> m/s</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Wind Gust</h3>
+                    <p><span id="wind-gust">--</span> m/s</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by freeCodeCamp Weather API</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
